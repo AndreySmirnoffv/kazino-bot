@@ -4,7 +4,7 @@ import fs from 'fs'
 import { defaultAction } from "./assets/scripts/default.js"
 import { sendWebApp } from "./assets/scripts/logic.js";
 
-const bot = new TelegramBot("7020658144:AAF7UD0fBh6VKq8tFflqhinUnK_RdGcqPgA", {polling: true})
+const bot = new TelegramBot("", {polling: true})
 
 bot.on('message', async msg => {
     const user = users.find(user => user.username === msg.from.username)
